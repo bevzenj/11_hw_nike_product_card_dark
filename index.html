@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Nike</title>
+</head>
+<body>
+    <div class="container justify-content-center col-5">
+        <div class="product row">
+            <div class="shoes col-5">
+                <img class="product__logo row" src="./image/logo.png" alt="logo">
+                <img class="product__shoes row" src="./image/Nike-SB-Stefan-Janoski-Max.png" alt="Nike-SB-Stefan-Janoski-Max">
+                <div class="product__choice row justify-content-center">
+                    <div class="product__radio col-1">
+                        <input id="radio-dark" type="radio" name="radio" value="1" checked>
+                        <label class="form-check-input product__radio__btn product__radio__btn--dark" for="radio-dark"></label>
+                    </div>
+                    <div class="product__radio col-1">
+                        <input id="radio-white" type="radio" name="radio" value="2">
+                        <label class="form-check-input product__radio__btn product__radio__btn--white" for="radio-white"></label>
+                    </div>
+                    <div class="product__radio col-1">
+                        <input id="radio-red" type="radio" name="radio" value="3">
+                        <label class="form-check-input product__radio__btn product__radio__btn--red" for="radio-red"></label>
+                    </div>
+                    <div class="product__radio col-1">
+                        <input id="radio-blue" type="radio" name="radio" value="4">
+                        <label class="form-check-input product__radio__btn product__radio__btn--blue" for="radio-blue"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="product__info col-3">
+                <h1 class="product__info__title">
+                    Nike SB Stefan Janoski Max
+                </h1>
+                <p class="product__info__subtitle">
+                    Unisex Skateboarding Shoe
+                </p>
+                <div class="product__info__rating-area">
+                    <input type="radio" id="star-1" name="rating" value="1">
+                    <label for="star-1"></label>
+                    <input type="radio" id="star-2" name="rating" value="2">
+                    <label for="star-2"></label>    
+                    <input type="radio" id="star-3" name="rating" value="3" checked>
+                    <label for="star-3"></label>  
+                    <input type="radio" id="star-4" name="rating" value="4">
+                    <label for="star-4"></label>    
+                    <input type="radio" id="star-5" name="rating" value="5">
+                    <label for="star-5"></label>	
+                </div>
+                <select class="product__info__select" name="select">
+                    <option value="value1" selected>Size</option>
+                    <option value="value2">43</option>
+                    <option value="value3">44</option>
+                    <option value="value3">45</option>
+                    <option value="value3">46</option>
+                  </select>
+                <select class="product__info__select" name="select">
+                    <option value="value1" selected>Qty</option>
+                    <option value="value2">1</option>
+                    <option value="value3">2</option>
+                    <option value="value3">3</option>
+                    <option value="value3">4</option>
+                  </select>
+                  <button class="product__info__btn">Add to card</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
